@@ -34,7 +34,7 @@ jobs:
 
       - name: 빌드 아티팩트 ZIP 압축 📦
         run: |
-          zip -r frontend.zip build
+          zip -r frontend.zip build appspec.yml scripts/
           ls -lh frontend.zip
 
       - name: AWS 자격 증명 구성 🔑
